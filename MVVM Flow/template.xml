@@ -1,0 +1,35 @@
+<template format="4"
+        revision="1"
+        name="MVVM Flow"
+        description="Creates a new MVVM Flow - Fragment, ViewModel, XML">
+
+    <category value="Other"/>
+
+    <parameter id="baseName"
+        name="Flow Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MvvmFlow"
+        help="The base name of the MVVM components"/>
+
+    <parameter id="layoutName"
+        name="Layout File Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="fr_${baseName}"
+        default="fr_baseName"
+        help="The name of the layout components"/>
+
+    <parameter id="corePackageName"
+        name="Core Package Name"
+        type="string"
+        constraints="nonempty"
+        suggest="${packageName}"
+        default="${packageName}"
+        help="The name of the core package"/>
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
