@@ -10,9 +10,13 @@
             type="${packageName}.${baseName}ViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.widget.ConstraintLayout 
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        tools:context="${packageName}.${baseName}Fragment">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
