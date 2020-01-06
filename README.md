@@ -2,12 +2,12 @@
 
 Templates for generating files in Android projects, based on different architectures.
 
-
 # Current architectures:
 1) MVVM
     - you can create an entire scene (Fragment + ViewModel + XML)
     - data binding enabled and already set up
-    
+    - IMPORTANT: it's based on Android-Base-Project
+    (https://github.com/wolfpackdigitalapps/android-base-project)
     
 # How to Install:
 
