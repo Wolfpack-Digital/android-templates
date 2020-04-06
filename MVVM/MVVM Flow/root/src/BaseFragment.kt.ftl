@@ -23,7 +23,7 @@ class ${baseName}Fragment : BaseFragment<${baseName}Binding, ${baseName}ViewMode
     // Setup
 
     private fun setupObservers() { 
-    	viewModel.cmd.observe(this) {
+    	viewModel.cmd.observe(viewLifecycleOwner) {
             when (it) {
                 // ${baseName}ViewModel.Command.CommandWithoutData -> {}
                 // is ${baseName}ViewModel.Command.CommandWithData -> { it.data }
