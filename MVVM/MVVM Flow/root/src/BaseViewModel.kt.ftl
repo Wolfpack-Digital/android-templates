@@ -1,8 +1,8 @@
 package ${packageName}
 
 import androidx.lifecycle.LiveData
-import com.hadilq.liveevent.LiveEvent
 import ${corePackageName}.shared.base.BaseViewModel
+import ${corePackageName}.shared.utils.LiveEvent
 
 class ${baseName}ViewModel: BaseViewModel() {
 	
