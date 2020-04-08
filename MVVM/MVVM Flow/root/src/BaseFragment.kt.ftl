@@ -23,10 +23,10 @@ class ${baseName}Fragment : BaseFragment<${baseName}Binding, ${baseName}ViewMode
     // Setup
 
     private fun setupObservers() { 
-    	viewModel.cmd.observe(this) {
+    	viewModel.cmd.observe(viewLifecycleOwner) {
             when (it) {
-                // SplashScreenViewModel.Command.CommandWithoutData -> {}
-                // is SplashScreenViewModel.Command.CommandWithData -> { it.data }
+                // ${baseName}ViewModel.Command.CommandWithoutData -> {}
+                // is ${baseName}ViewModel.Command.CommandWithData -> { it.data }
             }
         }
     }
